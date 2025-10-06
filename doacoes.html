@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doações e Apoio | Instituto Casa Verde</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Cores: Verde Principal (#035730), Amarelo Destaque (#ffd700), Fundo (#ecafaf) */
+
+      /* Configurações globais e reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #ecafaf; /* Fundo da página */
+        color: #333;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* -------------------------------------- */
+      /* NAV - Padrão */
+      /* -------------------------------------- */
+      #main-nav {
+        background-color: #035730;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      /* ... (O restante do CSS da NAV) ... */
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .logo-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+      }
+
+      .logo-img {
+        height: 40px;
+        margin-right: 10px;
+      }
+      .logo-text {
+        font-size: 1.4em;
+        font-weight: 700;
+      }
+      .nav-links {
+        display: flex;
+        gap: 25px;
+      }
+
+      .nav-item {
+        color: white;
+        font-weight: 600;
+        padding: 5px 0;
+        transition: color 0.3s ease, border-bottom 0.3s ease;
+        border-bottom: 3px solid transparent;
+      }
+
+      .nav-item:hover,
+      .nav-item.active {
+        color: #ffd700;
+        border-bottom: 3px solid #ffd700;
+      }
+
+      .special-link {
+        background-color: #e6b800;
+        padding: 8px 15px;
+        border-radius: 5px;
+        border-bottom: none !important;
+      }
+
+      .special-link:hover {
+        background-color: #ffc400;
+        color: #035730;
+      }
+
+      .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+        padding: 5px;
+      }
+
+      /* -------------------------------------- */
+      /* HERO PAGE (Faixa Panorâmica) - Padrão */
+      /* -------------------------------------- */
+
+      #hero-page {
+        margin-top: 60px;
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+      }
+
+      #hero-page h1 {
+        color: white;
+        font-size: 2.8em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+
+      #hero-page p {
+        color: white;
+        font-size: 1.1em;
+        font-weight: 300;
+        max-width: 80%;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      }
+
+      /* -------------------------------------- */
+      /* CARDS DE DOAÇÃO */
+      /* -------------------------------------- */
+
+      .donation-section {
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 0 20px;
+      }
+
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .donation-card {
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+
+      .donation-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-image {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .card-content h3 {
+        color: #035730;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      .card-content p {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .card-button {
+        display: inline-block;
+        background-color: #ffd700;
+        color: #035730;
+        padding: 10px 25px;
+        border-radius: 5px;
+        font-weight: 700;
+        transition: background-color 0.2s;
+        cursor: pointer;
+        border: none;
+        font-size: 1em;
+      }
+
+      .card-button:hover {
+        background-color: #ffc400;
+      }
+
+      /* -------------------------------------- */
+      /* MODAL (Padrão) */
+      /* -------------------------------------- */
+
+      .modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2000;
+        overflow-y: auto;
+        padding: 20px 0;
+      }
+
+      .modal-content {
+        background-color: white;
+        max-width: 600px;
+        margin: 40px auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        position: relative;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .modal-content h2 {
+        color: #035730;
+        font-size: 2em;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #ffd700;
+        padding-bottom: 10px;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+        transition: color 0.2s;
+      }
+
+      .close-button:hover {
+        color: #035730;
+      }
+
+      /* Modal Específico PIX */
+      #modal-pontual p {
+        line-height: 1.7;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      #modal-pontual strong {
+        color: #035730;
+        font-weight: 700;
+      }
+
+      #qr-code-img {
+        max-width: 250px;
+        height: auto;
+        margin: 10px auto 20px;
+        border: 1px solid #eee;
+      }
+
+      /* Modal Mensal */
+      #modal-mensal p {
+        margin-bottom: 30px;
+        line-height: 1.7;
+      }
+
+      #btn-assinar {
+        background-color: #035730;
+        color: white;
+        padding: 12px 30px;
+        font-size: 1.1em;
+        margin: 10px;
+      }
+
+      #btn-assinar:hover {
+        background-color: #024325;
+      }
+
+      /* -------------------------------------- */
+      /* FOOTER - Padrão (Amarelo) */
+      /* -------------------------------------- */
+      /* ... (O CSS do footer deve ser o padrão com títulos amarelos e col 1 centralizada) ... */
+      .site-footer {
+        background-color: #035730;
+        color: white;
+        padding: 40px 0 10px;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+      }
+
+      .footer-col {
+        flex: 1 1 1;
+        min-width: 250px;
+      }
+
+      .footer-col.logo-text {
+        text-align: center;
+      }
+
+      .footer-col h3 {
+        font-size: 1.3em;
+        color: #ffd700;
+        margin-bottom: 15px;
+      }
+
+      .footer-col h4 {
+        font-size: 1em;
+        color: #ffd700;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      /* ... (O restante do footer e responsividade) ... */
+      .footer-col.logo-text p {
+        font-size: 0.7em;
+        line-height: 1.6;
+        align-items: center;
+      }
+
+      .footer-col.links ul {
+        list-style: none;
+      }
+
+      .footer-col.links a {
+        display: block;
+        padding: 5px 0;
+        transition: color 0.2s;
+      }
+
+      .footer-col.links a:hover {
+        color: #ffd700;
+      }
+
+      .footer-col.contact p {
+        margin-bottom: 10px;
+      }
+
+      .footer-bottom {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 0.8em;
+        opacity: 0.8;
+      }
+
+      /* -------------------------------------- */
+      /* RESPONSIVIDADE */
+      /* -------------------------------------- */
+
+      @media (max-width: 900px) {
+        /* NAV com fundo verde corrigido */
+        .hamburger {
+          display: block;
+        }
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          background-color: #035730; /* Fundo Verde Corrigido */
+          flex-direction: column;
+          padding: 10px 0;
+        }
+        .nav-links.open {
+          display: flex;
+        }
+        .nav-item {
+          width: 100%;
+          padding: 10px 20px;
+          border-bottom: none !important;
+        }
+
+        /* HERO */
+        #hero-page h1 {
+          font-size: 2.5em;
+        }
+
+        /* CARDS */
+        .cards-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        /* MODAL */
+        .modal-content {
+          margin: 20px 10px;
+          padding: 20px;
+        }
+
+        /* FOOTER */
+        .footer-container {
+          flex-direction: column;
+          gap: 30px;
+        }
+
+        .footer-col {
+          min-width: 100%;
+          text-align: center;
+        }
+
+        .footer-col.links a {
+          display: inline-block;
+          margin: 0 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div class="nav-container">
+        <a href="index.html" class="logo-link">
+          <img
+            src="imagens/logo.png"
+            alt="Logotipo Instituto Casa Verde"
+            class="logo-img"
+          />
+          <span class="logo-text">INSTITUTO CASA VERDE</span>
+        </a>
+        <button class="hamburger" aria-label="Abrir menu">&#9776;</button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-item">INÍCIO</a>
+          <a href="sobre.html" class="nav-item">SOBRE NÓS</a>
+          <a href="atividades.html" class="nav-item">ATIVIDADES</a>
+          <a href="cursos.html" class="nav-item">CURSOS</a>
+          <a href="doacoes.html" class="nav-item special-link active"
+            >DOAÇÕES</a
+          >
+          <a href="contato.html" class="nav-item">CONTATO</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <header id="hero-page">
+        <h1 id="hero-title">Carregando...</h1>
+        <p id="hero-phrase">Carregando...</p>
+      </header>
+
+      <section class="donation-section">
+        <div class="cards-grid" id="donation-cards-container"></div>
+      </section>
+    </main>
+
+    <div class="modal-overlay" id="modal-pontual">
+      <div class="modal-content">
+        <span class="close-button" data-modal="modal-pontual">&times;</span>
+        <h2>Doação Pontual</h2>
+        <p id="pontual-text-pix">Carregando...</p>
+        <img id="qr-code-img" src="" alt="QR Code PIX" />
+        <p id="pontual-text-recibo">Carregando...</p>
+        <button class="card-button" data-modal="modal-pontual">Fechar</button>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-mensal">
+      <div class="modal-content">
+        <span class="close-button" data-modal="modal-mensal">&times;</span>
+        <h2>Torne-se Membro Mensal</h2>
+        <p id="mensal-text">Carregando...</p>
+        <a id="btn-assinar" href="#" target="_blank" class="card-button"
+          >Assinar Agora</a
+        >
+        <button class="card-button" data-modal="modal-mensal">Fechar</button>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-voluntario">
+      <div class="modal-content">
+        <span class="close-button" data-modal="modal-voluntario">&times;</span>
+        <h2>Torne-se um Voluntário</h2>
+        <p id="voluntario-text">Carregando...</p>
+        <button class="card-button" data-modal="modal-voluntario">
+          Fechar
+        </button>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col logo-text">
+          <h4>INSTITUTO CASA VERDE</h4>
+          <p id="footer-text-icv">Carregando...</p>
+        </div>
+
+        <div class="footer-col links">
+          <h3>LINKS RÁPIDOS</h3>
+          <ul>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="atividades.html">Atividades</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact">
+          <h3>CONTATO</h3>
+          <p id="footer-endereco">Endereço: Carregando...</p>
+          <p id="footer-email">E-mail: Carregando...</p>
+          <p id="footer-telefone">Telefone: Carregando...</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p id="footer-copyright">
+          Copyright ©2025 Instituto Casa Verde. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const API_URL = "http://localhost:3000/api/content";
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Lógica do Menu Hamburguer
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (hamburger && navLinks) {
+          hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+          });
+        }
+
+        // Inicia o carregamento do conteúdo dinâmico
+        fetchContentAndRenderDonations();
+
+        // Configura os listeners dos botões de Fechar Modal
+        setupModalListeners();
+      });
+
+      async function fetchContentAndRenderDonations() {
+        try {
+          const response = await fetch(API_URL);
+          if (!response.ok) {
+            throw new Error(`Erro ao buscar dados: ${response.status}`);
+          }
+          const data = await response.json();
+          const doacoes = data.doacoes;
+          const footerData = data.footer;
+
+          if (!doacoes || !footerData) {
+            console.error(
+              "Dados 'doacoes' ou 'footer' não encontrados na API."
+            );
+            return;
+          }
+
+          // --- Renderização do HEADER/HERO ---
+          document.getElementById("hero-title").textContent =
+            doacoes.tituloHero;
+          document.getElementById("hero-phrase").textContent =
+            doacoes.fraseHero;
+          document.getElementById(
+            "hero-page"
+          ).style.backgroundImage = `url(${doacoes.imagemHero})`;
+
+          // --- Renderização do FOOTER ---
+          renderFooter(footerData);
+
+          // --- Renderização dos Cards ---
+          renderDonationCards(doacoes.cards || []);
+
+          // --- Preenchimento dos Modais ---
+          fillModals(doacoes.modais);
+        } catch (error) {
+          console.error(
+            "Erro ao processar o conteúdo da página Doações:",
+            error
+          );
+        }
+      }
+
+      function renderDonationCards(cards) {
+        const container = document.getElementById("donation-cards-container");
+        container.innerHTML = "";
+
+        cards.forEach((card) => {
+          const cardElement = document.createElement("div");
+          cardElement.classList.add("donation-card");
+
+          cardElement.innerHTML = `
+                    <img src="${card.imagem}" alt="Imagem para ${
+            card.titulo
+          }" class="card-image">
+                    <div class="card-content">
+                        <h3>${card.titulo}</h3>
+                        <p>${card.descricao}</p>
+                        <button class="card-button open-modal" data-modal-target="${
+                          card.modalId
+                        }">
+                            ${
+                              card.titulo.includes("Voluntariado")
+                                ? "Quero Ajudar"
+                                : "Doar Agora"
+                            }
+                        </button>
+                    </div>
+                `;
+          container.appendChild(cardElement);
+        });
+
+        // Adiciona listeners para abrir o modal após renderização
+        document.querySelectorAll(".open-modal").forEach((button) => {
+          button.addEventListener("click", (e) => {
+            const modalId = e.target.getAttribute("data-modal-target");
+            document.getElementById(modalId).style.display = "block";
+          });
+        });
+      }
+
+      function fillModals(modais) {
+        // Modal 1: Doação Pontual (PIX)
+        const pontual = modais.pontual;
+        const pixText = pontual.textoPix.replace(
+          "PIX (CNPJ):",
+          `PIX (CNPJ): **${pontual.chavePix}**`
+        );
+        document.getElementById("pontual-text-pix").innerHTML = pixText;
+        document.getElementById("qr-code-img").src = pontual.imagemQrCode;
+        document.getElementById("pontual-text-recibo").textContent =
+          pontual.textoRecibo;
+
+        // Modal 2: Membro Mensal
+        const mensal = modais.mensal;
+        document.getElementById("mensal-text").textContent =
+          mensal.textoIntroducao;
+        document.getElementById("btn-assinar").href = mensal.linkAssinatura;
+
+        // Modal 3: Voluntariado
+        const voluntario = modais.voluntario;
+        document.getElementById("voluntario-text").textContent =
+          voluntario.textoIntroducao;
+
+        // O botão 'Fechar' do Modal Voluntariado será o link de contato
+        const closeBtnVoluntario = document.querySelector(
+          "#modal-voluntario .card-button"
+        );
+        closeBtnVoluntario.textContent = "Quero ser Voluntário!";
+        closeBtnVoluntario.setAttribute("data-is-link", "true");
+        closeBtnVoluntario.href = voluntario.linkCadastro;
+        closeBtnVoluntario.setAttribute("target", "_blank");
+      }
+
+      // Função para fechar o modal
+      function setupModalListeners() {
+        const modals = document.querySelectorAll(".modal-overlay");
+
+        modals.forEach((modal) => {
+          // Fechar ao clicar no 'X' ou no botão 'Fechar' dentro do modal
+          modal
+            .querySelectorAll(
+              '.close-button, .card-button:not([data-is-link="true"])'
+            )
+            .forEach((btn) => {
+              btn.addEventListener("click", () => {
+                // Se for o botão 'Quero ser Voluntário', o modal não fecha, pois abre o link.
+                if (
+                  btn.hasAttribute("data-is-link") &&
+                  btn.getAttribute("data-is-link") === "true"
+                ) {
+                  return;
+                }
+                modal.style.display = "none";
+              });
+            });
+
+          // Fechar ao clicar fora do modal
+          modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        });
+      }
+
+      // Função de Renderização do FOOTER (Reutilizada)
+      function renderFooter(footerData) {
+        document.getElementById("footer-text-icv").textContent =
+          footerData.textoIc_Text;
+        document.getElementById(
+          "footer-endereco"
+        ).textContent = `Endereço: ${footerData.endereco}`;
+        document.getElementById(
+          "footer-email"
+        ).textContent = `E-mail: ${footerData.email}`;
+        document.getElementById(
+          "footer-telefone"
+        ).textContent = `Telefone: ${footerData.telefone}`;
+        document.getElementById(
+          "footer-copyright"
+        ).textContent = `Copyright ©${footerData.copyrightAno} Instituto Casa Verde. Todos os direitos reservados.`;
+      }
+    </script>
+  </body>
+</html>
