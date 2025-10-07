@@ -16,7 +16,7 @@ app.get("/api/content", (req, res) => {
   try {
     // Usa `process.cwd()` ou `path.join(__dirname, '..', 'data', 'content.json')`
     // para garantir que o path funcione dentro da Vercel Function
-    const dataPath = path.join(__dirname, 'data', 'content.json'); 
+    const dataPath = path.join(path.dirname(require.main.filename), 'data', 'content.json'); 
 
     // Verifica se o arquivo JSON existe (segurança)
     if (!fs.existsSync(dataPath)) {
