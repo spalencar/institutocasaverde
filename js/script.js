@@ -1,5 +1,5 @@
 // js/script.js
-const API_URL = /api/content; // URL da nossa API
+const API_URL = '/api/content'; // URL da nossa API
 let currentSlideIndex = 0;
 let carouselData = []; // Inicializamos vazio, será preenchido pela API
 
