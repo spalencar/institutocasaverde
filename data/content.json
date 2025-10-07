@@ -89,8 +89,8 @@
 
 
   "atividades": {
-    "tituloHero": "Nossas Atividades e Eventos",
-    "fraseHero": "Conecte-se com a comunidade, aprenda e contribua para um futuro melhor. Veja nossos próximos eventos e junte-se a nós.",
+    "tituloHero": "Atividades e Eventos",
+    "fraseHero": "Conecte-se com a comunidade, aprenda e contribua para um futuro melhor. Junte-se a nós.",
     "imagemHero": "imagens/atividades/banner.jpg",
 
     "proximos": [
@@ -157,7 +157,7 @@
 
   "cursos": {
     "tituloHero": "Cursos Que Transformam Vidas",
-    "fraseHero": "Oferecemos educação de qualidade para todas as idades, abrindo portas para novas oportunidades e um futuro mais brilhante.",
+    "fraseHero": "Oferecemos educação de qualidade e abrimos portas para novas oportunidades e um futuro mais brilhante.",
     "imagemHero": "imagens/cursos/banner.jpg",
 
     "categorias": [
