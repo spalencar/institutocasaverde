@@ -151,7 +151,7 @@ html, body {
 }
 
 .carousel-overlay h2 {
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Sombra para o subtítulo */
 }
