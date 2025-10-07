@@ -16,7 +16,7 @@ app.get("/api/content", (req, res) => {
   try {
     // Usa `process.cwd()` ou `path.join(__dirname, '..', 'data', 'content.json')`
     // para garantir que o path funcione dentro da Vercel Function
-    const dataPath = path.join(__dirname, '..', 'data', 'content.json'); 
+    const dataPath = path.join(__dirname, "..", "data", "content.json");
 
     // Verifica se o arquivo JSON existe (segurança)
     if (!fs.existsSync(dataPath)) {
@@ -43,7 +43,6 @@ app.get("/api/carrossel", (req, res) => {
     res.status(500).json({ error: "Falha ao carregar dados do carrossel." });
   }
 });
-
 
 // --- Roteamento de Arquivos Estáticos (APENAS para Vercel) ---
 // Na Vercel, todos os arquivos que NÃO são roteados para uma função (API)
