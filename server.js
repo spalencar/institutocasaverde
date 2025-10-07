@@ -44,6 +44,7 @@ app.get("/api/carrossel", (req, res) => {
   }
 });
 
+
 // --- Roteamento de Arquivos Estáticos (APENAS para Vercel) ---
 // Na Vercel, todos os arquivos que NÃO são roteados para uma função (API)
 // são tratados como estáticos, então essa parte só precisa rotear o que

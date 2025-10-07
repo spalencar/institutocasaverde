@@ -1,6 +1,13 @@
 {
+  "name": "instituto-casa-verde",
+  "version": "1.0.0",
+  "description": "Site estático com API Node.js para conteúdo dinâmico.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
   }
 }
