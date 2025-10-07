@@ -295,7 +295,7 @@
       },
       "voluntario": {
         "textoIntroducao": "Seu tempo e talento são inestimáveis para nós! Cadastre-se e descubra como você pode fazer a diferença, plantando esperança e colhendo sorrisos!",
-        "linkCadastro": "https://api.whatsapp.com/send?phone=5511918225870&text=Olá,%20tenho%20interesse%20em%20ser%20um%20voluntário%20do%20Instituto%20Casa%20Verde."
+        "linkCadastro": "https://api.whatsapp.com/send?phone=5511918225870&text=Olá,%20tenho%20interesse%20em%20ser%20um%20voluntário%20do%20Instituto%20Casa%20Verde",
       }
     }
   },
