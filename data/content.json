@@ -182,7 +182,7 @@
           "depoimento": {
             "titulo": "Depoimento de Aluno: Maria de Lourdes",
             "imagem": "imagens/cursos/aluno_informatica.jpg",
-            "audioUrl": "audios/depoimento_maria.mp3",
+            "audioUrl": "audios/depoimento_mariaLourdes.mp3",
             "textoDescritivo": "Antes do curso, eu mal sabia ligar o computador. Hoje, me sinto confiante para enviar currículos e usar o e-mail no trabalho. Uma mudança de vida!"
           },
           "aprendizado": [
