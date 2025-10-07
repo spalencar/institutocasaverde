@@ -305,7 +305,7 @@
   "contato": {
     "tituloHero": "Entre em Contato",
     "fraseHero": "Estamos ansiosos para ouvir você! Sua mensagem é o primeiro passo para construirmos juntos um futuro melhor.",
-    "imagemHero": "imagens/contato.jpg", 
+    "imagemHero": "imagens/contato/contato.jpg", 
 
     "horarioAtendimento": {
       "diasUteis": "08:00 às 18:00",
