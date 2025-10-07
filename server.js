@@ -1,8 +1,8 @@
 // server.js (Versão adaptada para Vercel)
-const express = require('express');
-const cors = require('cors');
-const fs = require('fs');
-const path = require('path');
+const express = require("express");
+const cors = require("cors");
+const fs = require("fs");
+const path = require("path");
 
 const app = express();
 
@@ -12,34 +12,36 @@ app.use(cors());
 // --- Roteamento de API ---
 
 // Rota da API para buscar todos os dados do site
-app.get('/api/content', (req, res) => {
-    try {
-        // Usa `process.cwd()` ou `path.join(__dirname, '..', 'data', 'content.json')`
-        // para garantir que o path funcione dentro da Vercel Function
-        const dataPath = path.join(process.cwd(), 'data', 'content.json');
-        
-        // Verifica se o arquivo JSON existe (segurança)
-        if (!fs.existsSync(dataPath)) {
-             return res.status(404).json({ error: 'Arquivo de dados não encontrado.' });
-        }
-        
-        const content = fs.readFileSync(dataPath, 'utf-8');
-        res.json(JSON.parse(content));
-    } catch (error) {
-        console.error("Erro ao ler content.json:", error);
-        res.status(500).json({ error: 'Falha ao carregar o conteúdo do site.' });
+app.get("/api/content", (req, res) => {
+  try {
+    // Usa `process.cwd()` ou `path.join(__dirname, '..', 'data', 'content.json')`
+    // para garantir que o path funcione dentro da Vercel Function
+    const dataPath = path.join(process.cwd(), "data", "content.json");
+
+    // Verifica se o arquivo JSON existe (segurança)
+    if (!fs.existsSync(dataPath)) {
+      return res
+        .status(404)
+        .json({ error: "Arquivo de dados não encontrado." });
     }
+
+    const content = fs.readFileSync(dataPath, "utf-8");
+    res.json(JSON.parse(content));
+  } catch (error) {
+    console.error("Erro ao ler content.json:", error);
+    res.status(500).json({ error: "Falha ao carregar o conteúdo do site." });
+  }
 });
 
 // Rota específica para o carrossel (Opcional, mas mantida)
-app.get('/api/carrossel', (req, res) => {
-    try {
-        const dataPath = path.join(process.cwd(), 'data', 'content.json');
-        const content = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
-        res.json(content.carrossel);
-    } catch (error) {
-        res.status(500).json({ error: 'Falha ao carregar dados do carrossel.' });
-    }
+app.get("/api/carrossel", (req, res) => {
+  try {
+    const dataPath = path.join(process.cwd(), "data", "content.json");
+    const content = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+    res.json(content.carrossel);
+  } catch (error) {
+    res.status(500).json({ error: "Falha ao carregar dados do carrossel." });
+  }
 });
 
 // --- Roteamento de Arquivos Estáticos (APENAS para Vercel) ---
