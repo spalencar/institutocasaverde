@@ -508,9 +508,9 @@
         <span class="close-button" data-modal="modal-voluntario">&times;</span>
         <h2>Torne-se um Voluntário</h2>
         <p id="voluntario-text">Carregando...</p>
-        <button class="card-button" data-modal="modal-voluntario">
+        <a id="btn-voluntario" href="#" target="_blank" class="card-button">
           Fechar
-        </button>
+        </a>
       </div>
     </div>
 
@@ -546,7 +546,7 @@
     </footer>
 
     <script>
-      const API_URL = '/api/content';
+      const API_URL = "/api/content";
 
       document.addEventListener("DOMContentLoaded", () => {
         // Lógica do Menu Hamburguer
@@ -664,19 +664,16 @@
           mensal.textoIntroducao;
         document.getElementById("btn-assinar").href = mensal.linkAssinatura;
 
-        // Modal 3: Voluntariado
-        const voluntario = modais.voluntario;
-        document.getElementById("voluntario-text").textContent =
-          voluntario.textoIntroducao;
+        // Agora seleciona o novo elemento <a> com ID #btn-voluntario
+        const voluntarioBtn = document.getElementById("btn-voluntario");
+        voluntarioBtn.textContent = "Quero ser Voluntário!";
+        voluntarioBtn.href = voluntario.linkCadastro;
+        voluntarioBtn.setAttribute("target", "_blank");
 
-        // O botão 'Fechar' do Modal Voluntariado será o link de contato
-        const closeBtnVoluntario = document.querySelector(
-          "#modal-voluntario .card-button"
-        );
-        closeBtnVoluntario.textContent = "Quero ser Voluntário!";
-        closeBtnVoluntario.setAttribute("data-is-link", "true");
-        closeBtnVoluntario.href = voluntario.linkCadastro;
-        closeBtnVoluntario.setAttribute("target", "_blank");
+        // Opcional: Para fechar o modal DEPOIS que o link for clicado (melhor UX)
+        voluntarioBtn.addEventListener("click", () => {
+          document.getElementById("modal-voluntario").style.display = "none";
+        });
       }
 
       // Função para fechar o modal
