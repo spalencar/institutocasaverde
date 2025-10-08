@@ -295,7 +295,7 @@
       },
       "voluntario": {
         "textoIntroducao": "Seu tempo e talento são inestimáveis para nós! Cadastre-se e descubra como você pode fazer a diferença, plantando esperança e colhendo sorrisos!",
-        "linkCadastro": "https://docs.google.com/forms/d/e/1FAIpQLSf9PY750XPA-fsNMkCL0NShHFfZMv3pu_LDA9u9OZeZ0oZxhw/viewform?usp=header"
+        "linkCadastro": "mailto:casaverdeinstituto@gmail.com?subject=Inscrição%20para%20voluntariado&body=Olá,%20gostaria%20de%20me%20inscrever%20para%20o%20trabalho%20voluntário.%20Meu%20nome%20é%20[Seu%20Nome]%20e%20meu%20telefone%20é%20[Seu%20Telefone]."
       }
     }
   },
