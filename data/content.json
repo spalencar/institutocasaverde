@@ -103,12 +103,12 @@
         "id": 2,
         "imagem": "imagens/atividades/arrecadacao.jpg",
         "titulo": "Arrecadação de Agasalhos e Alimentos",
-        "data": "10 de Janeiro, 2026",
+        "data": "1 de Novembro, 2025",
         "tema": "Social",
         "horario": "10:00 - 18:00",
         "local": "Pontos de coleta do ICV",
         "descricao": "Ajude a aquecer e alimentar famílias em situação de vulnerabilidade. Doe roupas, cobertores e alimentos não perecíveis.",
-        "linkContato": "mailto:contato@icv.org.br?subject=Inscrição%20Sarau%20Cultural"
+        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20mais%20informações%20sobre%20sobre%20os%20pontos%20de%20coletas."
       },
       {
         "id": 3,
@@ -119,7 +119,7 @@
         "horario": "09:00 - 12:00",
         "local": "Campo do ICV",
         "descricao": "Incentivando o esporte e a integração com um torneio amistoso para crianças de 6 a 12 anos.",
-        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Informações%20Torneio%20Futebol"
+        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Informações%20sobre%20o%20Torneio%20de%20Futebol"
       }
     ],
     "realizados": [
