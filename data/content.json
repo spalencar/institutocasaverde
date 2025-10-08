@@ -187,7 +187,7 @@
         "categoria": "Música",
         "imagemCard": "imagens/cursos/curso_teclado.png",
         "titulo": "Teclado sem Segredos",
-        "descricaoCurta": "Liberte Sua Harmonia! Cante, toque e descubra ritmos em um ambiente divertido e criativo! As oficinas de música do Instituto Casa Verde são o palco perfeito para desenvolver seu talento, expressão e o poder do trabalho em equipe. Transforme notas em paixão e faça sua melodia ressoar conosco!",
+        "descricaoCurta": "As oficinas de música do Instituto Casa Verde oferecem uma oportunidade única para crianças e adultos da comunidade desenvolverem seu talento musical. Com aulas práticas de teclado, violão e bateria, os participantes aprendem teoria, técnica e expressão artística em um ambiente acolhedor. As atividades estimulam a criatividade, a disciplina e o trabalho em equipe. Uma experiência transformadora que une arte, cultura e inclusão social.",
         "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Tenho%20interesse%20no%20curso%20de%20Teclado",
 
         "detalhes": {
@@ -214,26 +214,26 @@
       {
         "id": 3,
         "categoria": "Esportes",
-        "imagemCard": "imagens/cursos/escola_futebol.jpg",
-        "titulo": "Escola de Futebol",
-        "descricaoCurta": "Mais que Gols, Formamos Vencedores! Em parceria, a bola rola com propósito em nossa Escola de Futebol! Nossas aulas ensinam técnica, disciplina e respeito, moldando campeões dentro e fora de campo. Invista no futuro, onde cada chute é um passo rumo à vitória!",
+        "imagemCard": "imagens/cursos/escola_futebol.png",
+        "titulo": "Escola de Futebol ICV",
+        "descricaoCurta": "O Instituto Casa Verde oferece diversas modalidades esportivas para crianças e jovens da comunidade, promovendo saúde, disciplina e inclusão social. As escolas de futebol e boxe são os grandes destaques, unindo técnica, foco e superação em cada treino. Por meio do esporte, os alunos desenvolvem valores como respeito, cooperação e determinação. Um projeto que transforma vidas, formando atletas e cidadãos vencedores dentro e fora das quadras e ringues.",
         "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20saber%20mais%20sobre%20Informática%20Básica",
 
         "detalhes": {
-          "imagemDetalhe": "imagens/curso_info_detalhe.jpg",
-          "descricaoCompleta": "Este curso de 40 horas é fundamental para quem busca o primeiro emprego ou recolocação. Cobrimos desde a navegação segura na internet até a criação de documentos profissionais e planilhas básicas. O foco é prático e voltado para a empregabilidade.",
+          "imagemDetalhe": "imagens/cursos/escola_futebol.png",
+          "descricaoCompleta": "Mais que gols, formamos vencedores! Em parceria com a comunidade, a bola rola com propósito em nossa Escola de Futebol do Instituto Casa Verde. Aqui, cada treino vai além do jogo, ensinando técnica, disciplina, trabalho em equipe e respeito. Nossos alunos aprendem a vencer desafios dentro e fora de campo, desenvolvendo corpo e mente. Invista no futuro, onde cada chute representa um passo rumo à vitória e à formação de verdadeiros campeões!",
           "depoimento": {
-            "titulo": "Depoimento de Aluno: Maria de Lourdes",
-            "imagem": "imagens/dep_maria.jpg",
-            "audioUrl": "audios/depoimento_maria.mp3",
-            "textoDescritivo": "Antes do curso, eu mal sabia ligar o computador. Hoje, me sinto confiante para enviar currículos e usar o e-mail no trabalho. Uma mudança de vida!"
+            "titulo": "Depoimento de Aluno: Luciano Santos",
+            "imagem": "imagens/cursos/aluno_futebol.png",
+            "audioUrl": "audios/depoimento_luciano.mp3",
+            "textoDescritivo": "Oi! Meu nome é Luciano. Eu participo da escolinha de futebol do Instituto Casa Verde e eu adoro treinar aqui! Aprendi muita coisa, como trabalhar em equipe, respeitar os colegas e nunca desistir. Os professores são muito legais e sempre nos ajudam a melhorar. Jogar aqui é muito mais que fazer gols — é aprender, se divertir e sonhar em ser um grande jogador um dia"
           },
           "aprendizado": [
-            "Dominar o Pacote Office (Word e Excel)",
-            "Navegação segura e uso de e-mail profissional",
-            "Criação e formatação de documentos",
-            "Organização de arquivos e pastas",
-            "Pesquisa eficaz na internet"
+            "Técnicas básicas do futebol – controle de bola, passes, dribles e finalizações.",
+            "Trabalho em equipe – aprender a jogar de forma cooperativa e respeitosa com os colegas.",
+            "Disciplina e responsabilidade – cumprir horários, seguir regras e respeitar o treinador.",
+            "Condicionamento físico – desenvolver força, agilidade, coordenação e resistência.",
+            "Espírito esportivo – saber ganhar e perder com respeito, valorizando o fair play."
           ]
         }
       }
