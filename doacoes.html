@@ -546,7 +546,7 @@
     </footer>
 
     <script>
-      const API_URL = "/api/content";
+      const API_URL = '/api/content';
 
       document.addEventListener("DOMContentLoaded", () => {
         // Lógica do Menu Hamburguer
@@ -663,6 +663,11 @@
         document.getElementById("mensal-text").textContent =
           mensal.textoIntroducao;
         document.getElementById("btn-assinar").href = mensal.linkAssinatura;
+
+        // Modal 3: Voluntariado
+        const voluntario = modais.voluntario;
+        document.getElementById("voluntario-text").textContent =
+          voluntario.textoIntroducao;
 
         // O botão 'Fechar' do Modal Voluntariado será o link de contato
         const voluntarioBtn = document.getElementById("btn-voluntario");
