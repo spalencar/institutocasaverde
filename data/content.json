@@ -281,7 +281,7 @@
       },
 
       "voluntario": {
-        "textoIntroducao": "Seu tempo e talento são inestimáveis para nós! <strong>Cadastre-se</strong> e descubra como você pode fazer a diferença, plantando esperança e colhendo sorrisos!",
+        "textoIntroducao": "Seu tempo e talento são inestimáveis para nós! <br><strong)Cadastre-se</strong> e descubra como você pode fazer a diferença, plantando esperança e colhendo sorrisos!",
         "linkCadastro": "https://docs.google.com/forms/d/e/1FAIpQLSf9PY750XPA-fsNMkCL0NShHFfZMv3pu_LDA9u9OZeZ0oZxhw/viewform?usp=header"
       }
     }
