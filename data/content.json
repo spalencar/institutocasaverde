@@ -108,7 +108,7 @@
         "horario": "10:00 - 18:00",
         "local": "Pontos de coleta do ICV",
         "descricao": "Ajude a aquecer e alimentar famílias em situação de vulnerabilidade. Doe roupas, cobertores e alimentos não perecíveis.",
-        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20mais%20informações%20sobre%20sobre%20os%20pontos%20de%20coletas."
+        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20mais%20informações%20sobre%20os%20pontos%20de%20coletas."
       },
       {
         "id": 3,
@@ -215,7 +215,7 @@
         "id": 3,
         "categoria": "Esportes",
         "imagemCard": "imagens/cursos/escola_futebol.png",
-        "titulo": "Escola de Futebol ICV",
+        "titulo": "Escola de Futebol - ICV",
         "descricaoCurta": "O Instituto Casa Verde oferece diversas modalidades esportivas para crianças e jovens da comunidade, promovendo saúde, disciplina e inclusão social. As escolas de futebol e boxe são os grandes destaques, unindo técnica, foco e superação em cada treino. Por meio do esporte, os alunos desenvolvem valores como respeito, cooperação e determinação. Um projeto que transforma vidas, formando atletas e cidadãos vencedores dentro e fora das quadras e ringues.",
         "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20saber%20mais%20sobre%20Informática%20Básica",
 
