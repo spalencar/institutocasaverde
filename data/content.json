@@ -170,7 +170,7 @@
             "titulo": "Depoimento de Aluno: Maria de Lourdes",
             "imagem": "imagens/cursos/aluno_informatica.jpg",
             "audioUrl": "audios/depoimento_mariaLourdes.mp3",
-            "textoDescritivo": "Antes do curso, eu mal sabia ligar o computador. Hoje, me sinto confiante para enviar currículos e usar o e-mail no trabalho. Uma mudança de vida!"
+            "textoDescritivo": "Antes do Master ICV, eu só sonhava em criar. Hoje, eu realmente crio o futuro. O Master ICV não é apenas um curso de programação; é onde a nova geração aprende a transformar ideias em realidade. Aqui, desenvolvemos habilidades em tecnologia e inovação que vão muito além da tela do computador. Se você é jovem e quer parar de consumir, se quer de fato dominar a tecnologia, eu garanto que o Master ICV é o melhor curso de programação do Brasil. Venha se tornar um gênio e começar a trilhar seu próprio caminho."
           },
           "aprendizado": [
             "Dominar o Pacote Office (Word e Excel)",
@@ -193,12 +193,14 @@
         "detalhes": {
           "imagemDetalhe": "imagens/cursos/curso_teclado.png",
           "descricaoCompleta": "Para iniciantes sem nenhuma experiência, este curso ensina a postura correta, leitura de cifras e os acordes mais importantes do teclado popular. As aulas são práticas e em grupo, incentivando a colaboração.",
+          
           "depoimento": {
             "titulo": "Depoimento de Aluno: Pedro Henrique",
             "imagem": "imagens/cursos/aluno_teclado.png",
             "audioUrl": "audios/depoimento_pedro.mp3",
-            "textoDescritivo": "Sempre sonhei em tocar Teclado! A metodologia é simples e muito divertida. Em dois meses já estou tocando minhas músicas favoritas."
+            "textoDescritivo": "Eu sempre quis tocar teclado, mas achava que era muito complicado. O Teclado Sem Segredos mudou tudo. As aulas são muito práticas e os professores ensinam de um jeito que a gente pega a teoria na hora. Em pouco tempo, eu já estava tocando músicas que eu adoro. A melhor parte é a confiança que eu ganhei. Se você tem vontade, pode se matricular sem medo. O curso é incrível e super recomendo."
           },
+          
           "aprendizado": [
             "Entendimento de notas, ritmos, claves e leitura de partituras básicas.",
             "Desenvolvimento da coordenação motora e uso correto dos dedos para velocidade e fluidez.",
