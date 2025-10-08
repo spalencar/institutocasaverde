@@ -37,8 +37,6 @@
     "subtitle": "Conectando pessoas e transformando vidas através de nossas iniciativas"
   },
 
-
-
   "sobreNos": {
     "tituloHero": "Nossa História",
     "fraseHero": "Conheça a jornada que nos trouxe até aqui e o que nos motiva todos os dias.",
@@ -76,8 +74,6 @@
     }
   },
 
-
-
   "footer": {
     "textoIc_Text": "Comprometidos com a transformação social através da educação, cultura e desenvolvimento. Junte-se a nós nesta missão!",
     "endereco": "Rua Aramina, 83 - Jd. Fiorelo, Itaquaquecetuba/SP - Cep: 08570-420",
@@ -85,8 +81,6 @@
     "telefone": "(11) 91822-5870",
     "copyrightAno": "2025"
   },
-
-
 
   "atividades": {
     "tituloHero": "Atividades e Eventos",
@@ -153,19 +147,12 @@
     ]
   },
 
-
-
   "cursos": {
     "tituloHero": "Cursos Que Transformam Vidas",
     "fraseHero": "Oferecemos educação de qualidade e abrimos portas para novas oportunidades e um futuro mais brilhante.",
     "imagemHero": "imagens/cursos/banner.jpg",
 
-    "categorias": [
-      "Informática",
-      "Música",
-      "Reforço Escolar",
-      "Esportes"
-    ],
+    "categorias": ["Informática", "Música", "Reforço Escolar", "Esportes"],
 
     "lista": [
       {
@@ -251,8 +238,6 @@
     ]
   },
 
-
-
   "doacoes": {
     "tituloHero": "Apoie Nossa Causa",
     "fraseHero": "Onde cada centavo plantado vira futuro e esperança para a nossa comunidade.",
@@ -289,34 +274,37 @@
         "imagemQrCode": "imagens/doacoes/qrcode_pix.png",
         "textoRecibo": "Após a doação, se desejar um recibo, envie o comprovante para o nosso email de contato."
       },
+      
       "mensal": {
         "textoIntroducao": "Ao se tornar um membro mensal, você garante um fluxo contínuo de apoio que nos permite planejar projetos de longo prazo e causar um impacto ainda maior.",
         "linkAssinatura": "https://pag.ae/7-UM4jC"
       },
+
       "voluntario": {
         "textoIntroducao": "Seu tempo e talento são inestimáveis para nós! Cadastre-se e descubra como você pode fazer a diferença, plantando esperança e colhendo sorrisos!",
-        "linkCadastro": "mailto:casaverdeinstituto@gmail.com?subject=Inscrição%20para%20voluntariado&body=Olá,%20gostaria%20de%20me%20inscrever%20para%20o%20trabalho%20voluntário.%20Meu%20nome%20é%20[Seu%20Nome]%20e%20meu%20telefone%20é%20[Seu%20Telefone]."
+        "linkCadastro": "https://docs.google.com/forms/d/e/1FAIpQLSf9PY750XPA-fsNMkCL0NShHFfZMv3pu_LDA9u9OZeZ0oZxhw/viewform?usp=header"
       }
     }
   },
 
-
-
   "contato": {
     "tituloHero": "Entre em Contato",
     "fraseHero": "Estamos ansiosos para ouvir você! Sua mensagem é o primeiro passo para construirmos juntos um futuro melhor.",
-    "imagemHero": "imagens/contato/contato.jpg", 
+    "imagemHero": "imagens/contato/contato.jpg",
 
     "horarioAtendimento": {
       "diasUteis": "08:00 às 18:00",
       "sabados": "09:00 às 14:00"
     },
-    
+
     "redesSociais": [
-      {"icone": "facebook", "link": "https://facebook.com/institutocasaverde"},
-      {"icone": "instagram", "link": "https://instagram.com/icv_oficial"},
-      {"icone": "linkedin", "link": "https://linkedin.com/company/icvbrasil"},
-      {"icone": "youtube", "link": "https://youtube.com/icvprogramas"}
+      {
+        "icone": "facebook",
+        "link": "https://facebook.com/institutocasaverde"
+      },
+      { "icone": "instagram", "link": "https://instagram.com/icv_oficial" },
+      { "icone": "linkedin", "link": "https://linkedin.com/company/icvbrasil" },
+      { "icone": "youtube", "link": "https://youtube.com/icvprogramas" }
     ]
   }
 }
