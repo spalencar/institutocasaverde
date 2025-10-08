@@ -160,7 +160,7 @@
         "categoria": "Informática",
         "imagemCard": "imagens/cursos/informatica.jpg",
         "titulo": "Informática Básica - MasterICV",
-        "descricaoCurta": "Desvende o Futuro Digital! No Instituto Casa Verde, você domina o universo da informática, internet, programação e IA com aulas práticas e dinâmicas. Preparamos você para o mercado de trabalho, garantindo seu engajamento e sucesso na era digital. Venha inovar e construir seu futuro tecnológico conosco!",
+        "descricaoCurta": "O curso Informática Básica MasterICV do Instituto Casa Verde foi desenvolvido especialmente para crianças de 9 a 15 anos que desejam dar os primeiros passos no mundo digital. De forma leve e divertida, os alunos aprendem a usar o computador, criar documentos, explorar a internet com segurança e desenvolver habilidades tecnológicas essenciais. As aulas são práticas e dinâmicas, estimulando a criatividade e o raciocínio lógico. Um aprendizado que une educação, tecnologia e futuro!",
         "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20saber%20mais%20sobre%20Informática%20Básica",
 
         "detalhes": {
@@ -187,7 +187,7 @@
         "categoria": "Música",
         "imagemCard": "imagens/cursos/curso_teclado.png",
         "titulo": "Teclado sem Segredos",
-        "descricaoCurta": "Liberte Sua Harmonia! Cante, toque e descubra ritmos em um ambiente divertido e criativo! Nossas oficinas são o palco perfeito para desenvolver seu talento, expressão e o poder do trabalho em equipe. Transforme notas em paixão e faça sua melodia ressoar conosco!",
+        "descricaoCurta": "Liberte Sua Harmonia! Cante, toque e descubra ritmos em um ambiente divertido e criativo! As oficinas de música do Instituto Casa Verde são o palco perfeito para desenvolver seu talento, expressão e o poder do trabalho em equipe. Transforme notas em paixão e faça sua melodia ressoar conosco!",
         "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Tenho%20interesse%20no%20curso%20de%20Teclado",
 
         "detalhes": {
