@@ -1,3 +1,4 @@
+/* CSS DA PÁGINA index.html */
 /* Configurações globais e reset */
 * {
   margin: 0;
@@ -291,3 +292,384 @@ html, body {
       height: calc(100vh - 60px); 
   }
 }
+
+/* -------------------------*/
+/* CSS DA PÁGINA sobre.html */
+
+/* Cores: Verde Principal (#035730), Background (#ecafaf) */
+
+/* Configurações globais e reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ecafaf; /* Cor de fundo principal */
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------------------------------------- */
+/* NAV - Reutilizada da INICIO */
+/* -------------------------------------- */
+#main-nav {
+  background-color: #035730;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+.logo-text {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  color: white;
+  font-weight: 600;
+  padding: 5px 0;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #ffd700;
+  border-bottom: 3px solid #ffd700;
+}
+
+.special-link {
+  background-color: #e6b800;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border-bottom: none !important;
+}
+
+.special-link:hover {
+  background-color: #ffc400;
+  color: #035730;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* -------------------------------------- */
+/* HERO PAGE (Faixa Panorâmica) */
+/* -------------------------------------- */
+
+#hero-page {
+  margin-top: 60px;
+  width: 100%;
+  height: 30vh; /* Altura da faixa */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Filtro que destaca a legibilidade */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+#hero-page h1 {
+  color: white;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#hero-page p {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 300;
+  max-width: 80%;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* -------------------------------------- */
+/* SEÇÕES DE CONTEÚDO (Imagem e Texto) */
+/* -------------------------------------- */
+
+.content-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.content-section:nth-child(even) {
+  /* Inverte o layout para a segunda seção */
+  flex-direction: row-reverse;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-content h2 {
+  color: #035730;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.text-content h3 {
+  /* Para Missão/Visão */
+  color: #035730;
+  margin-top: 20px;
+}
+
+.text-content p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  white-space: pre-wrap; /* Mantém quebras de linha do JSON */
+}
+
+.image-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------------------- */
+/* SEÇÃO DE VALORES (Cards) */
+/* -------------------------------------- */
+
+.values-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f7f7f7; /* Cor de fundo suave para destacar a seção */
+}
+
+.values-section h2 {
+  color: #035730;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.values-section > p {
+  margin-bottom: 40px;
+  font-size: 1.1em;
+}
+
+.values-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #035730; /* Destaque */
+}
+
+.value-card h3 {
+  color: #035730;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------- */
+/* FOOTER (Novo) */
+/* -------------------------------------- */
+
+.site-footer {
+  background-color: #035730;
+  color: white;
+  padding: 40px 0 10px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-col {
+  flex: 1 1 1;
+  min-width: 250px;
+}
+
+.footer-col h3 {
+  font-size: 1.3em;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  font-size: 1.0em;
+  color: #ffd700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-col.logo-text p {
+  font-size: 0.7em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer-col.links ul {
+  list-style: none;
+}
+
+.footer-col.links a {
+  display: block;
+  padding: 5px 0;
+  transition: color 0.2s;
+  align-items: center;
+}
+
+.footer-col.links a:hover {
+  color: #ffd700;
+}
+
+.footer-col.contact p {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+/* -------------------------------------- */
+/* RESPONSIVIDADE */
+/* -------------------------------------- */
+
+@media (max-width: 900px) {
+  /* NAV */
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #035730;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-item {
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: none !important;
+  }
+
+  /* CONTEÚDO */
+  .content-section,
+  .content-section:nth-child(even) {
+    flex-direction: column; /* Empilha em telas menores */
+    text-align: center;
+  }
+
+  .image-content {
+    max-width: 100%;
+    order: -1; /* Coloca a imagem no topo no mobile para melhor visualização */
+  }
+
+  .text-content {
+    text-align: left; /* Mantém o texto alinhado à esquerda dentro do container */
+  }
+
+  .text-content h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-col {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .footer-col.links a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+/*-----------------------------------------*/
+/* CSS DA PAGINA atividades.html */
+
