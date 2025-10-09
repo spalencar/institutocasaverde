@@ -3,14 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; /* Fonte sugerida */
+  font-family: "Poppins", sans-serif; /* Fonte sugerida */
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%; /* Garante que não haja excesso de largura */
   overflow-x: hidden; /* Remove a barra de rolagem horizontal desnecessária */
-  background-color: #ecafaf; 
+  background-color: #ecafaf;
 }
 
 /* -------------------------------------- */
@@ -65,10 +66,11 @@ html, body {
   padding: 5px 0;
   transition: color 0.3s ease, border-bottom 0.3s ease;
   /* Efeito de hover interessante: Borda inferior que aparece */
-  border-bottom: 3px solid transparent; 
+  border-bottom: 3px solid transparent;
 }
 
-.nav-item:hover, .nav-item.active {
+.nav-item:hover,
+.nav-item.active {
   color: #ffd700; /* Um amarelo/dourado para destaque */
   border-bottom: 3px solid #ffd700;
 }
@@ -93,7 +95,9 @@ html, body {
 #hero-carousel {
   margin-top: 60px; /* Ajuste com base na altura real da sua nav */
   position: relative;
-  height: calc(100vh - 60px); /* Ocupa o restante da tela (tela cheia menos a nav) */
+  height: calc(
+    100vh - 60px
+  ); /* Ocupa o restante da tela (tela cheia menos a nav) */
   overflow: hidden;
 }
 
@@ -111,7 +115,7 @@ html, body {
   background-position: center;
   /* Efeito de filtro para destacar o texto! */
   /* Cria uma sobreposição escura (overlay) na imagem */
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); 
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
   display: none; /* Inicialmente todos invisíveis, JS mostra um */
 }
 
@@ -170,7 +174,7 @@ html, body {
   z-index: 20;
   transition: background-color 0.3s;
   /* Remove a borda padrão do botão */
-  outline: none; 
+  outline: none;
 }
 
 .carousel-control:hover {
@@ -213,7 +217,6 @@ html, body {
   border: 1px solid white;
 }
 
-
 /* -------------------------------------- */
 /* RESPONSIVIDADE (MEDIA QUERIES) */
 /* -------------------------------------- */
@@ -232,64 +235,64 @@ html, body {
 @media (max-width: 900px) {
   /* Mostra o hamburguer e organiza a nav para mobile */
   .nav-container {
-      flex-direction: row; /* Volta a ser linha para logo e hamburguer */
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
+    flex-direction: row; /* Volta a ser linha para logo e hamburguer */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
   }
 
   .hamburger {
-      display: block; /* Mostra o ícone */
+    display: block; /* Mostra o ícone */
   }
 
   .nav-links {
-      /* Esconde e estiliza o menu para ser um menu dropdown/lateral */
-      display: none; 
-      position: absolute;
-      top: 60px; /* Abaixo da nav */
-      left: 0;
-      width: 100%;
-      background-color: #035730; /* Fundo verde */
-      flex-direction: column;
-      padding: 10px 0;
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    /* Esconde e estiliza o menu para ser um menu dropdown/lateral */
+    display: none;
+    position: absolute;
+    top: 60px; /* Abaixo da nav */
+    left: 0;
+    width: 100%;
+    background-color: #035730; /* Fundo verde */
+    flex-direction: column;
+    padding: 10px 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   }
-  
+
   .nav-links.open {
-      display: flex; /* Mostra quando a classe 'open' é adicionada via JS */
+    display: flex; /* Mostra quando a classe 'open' é adicionada via JS */
   }
 
   .nav-item {
-      width: 100%;
-      padding: 10px 20px;
-      border-bottom: none !important; /* Remove a borda inferior */
-      /* Novo efeito de hover para mobile */
-      transition: background-color 0.2s ease;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: none !important; /* Remove a borda inferior */
+    /* Novo efeito de hover para mobile */
+    transition: background-color 0.2s ease;
   }
 
-  .nav-item:hover, .nav-item.active {
-      color: white; /* Mantém branco para melhor contraste */
-      background-color: #024325; /* Verde um pouco mais escuro no hover/ativo */
-      border-bottom: none;
+  .nav-item:hover,
+  .nav-item.active {
+    color: white; /* Mantém branco para melhor contraste */
+    background-color: #024325; /* Verde um pouco mais escuro no hover/ativo */
+    border-bottom: none;
   }
 
+  /* Mantém o destaque, mas alinhado */
   .special-link {
-      /* Mantém o destaque, mas alinhado */
-      .special-link {
-        background-color: #e6b800;
-        padding: 8px 15px;
-        border-radius: 5px;
-        border-bottom: none !important;
-      }
-    
-      .special-link:hover {
-        background-color: #ffc400;
-        color: #035730;
-      }
+    background-color: #e6b800;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border-bottom: none !important;
+  }
+
+  .special-link:hover {
+    background-color: #ffc400;
+    color: #035730;
+  }
 
   /* Correção do Carrossel para acomodar a nav: A nav mobile tem 60px de altura */
   #hero-carousel {
-      margin-top: 60px; 
-      height: calc(100vh - 60px); 
+    margin-top: 60px;
+    height: calc(100vh - 60px);
   }
 }
