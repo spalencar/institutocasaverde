@@ -1,0 +1,393 @@
+/* Cores: Verde Principal (#035730), Background (#ecafaf) */
+
+/* Configurações globais e reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ecafaf; /* Cor de fundo suave para esta página */
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* -------------------------------------- */
+  /* NAV - Reutilizada */
+  /* -------------------------------------- */
+  #main-nav {
+    background-color: #035730;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .logo-img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  .logo-text {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-item {
+    color: white;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .nav-item:hover,
+  .nav-item.active {
+    color: #ffd700;
+    border-bottom: 3px solid #ffd700;
+  }
+  
+  .special-link {
+    background-color: #e6b800;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border-bottom: none !important;
+  }
+  
+  .special-link:hover {
+    background-color: #ffc400;
+    color: #035730;
+  }
+  
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  /* -------------------------------------- */
+  /* HERO PAGE (Faixa Panorâmica) - Reutilizada */
+  /* -------------------------------------- */
+  
+  #hero-page {
+    margin-top: 60px;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  }
+  
+  #hero-page h1 {
+    color: white;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  #hero-page p {
+    color: white;
+    font-size: 1.1em;
+    font-weight: 300;
+    max-width: 80%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* -------------------------------------- */
+  /* LISTAGEM DE CARDS (ATIVIDADES) */
+  /* -------------------------------------- */
+  
+  .activities-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+  .activities-section h2 {
+    color: #035730;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+  }
+  
+  .activity-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    color: #035730;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  /* Próximos Eventos (Mais detalhes) */
+  .proximo-info span {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .proximo-info strong {
+    color: #333;
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #333;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .card-button {
+    display: inline-block;
+    background-color: #035730;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .card-button:hover {
+    background-color: #024325;
+  }
+  
+  /* Eventos Realizados (Menos detalhes) */
+  .realizado-data {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  /* -------------------------------------- */
+  /* FILTRO (Sugestão de Funcionalidade) */
+  /* -------------------------------------- */
+  
+  .filter-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .filter-button {
+    background-color: #035730;
+    color: white;
+    border: 2px solid #035730;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .filter-button:hover,
+  .filter-button.active {
+    background-color: #ffd700;
+    color: #035730;
+    border-color: #ffd700;
+  }
+  
+  .filter-button.active {
+    box-shadow: 0 0 0 2px #035730;
+  }
+  
+  /* -------------------------------------- */
+  /* FOOTER - Reutilizado */
+  /* -------------------------------------- */
+  
+  .site-footer {
+    background-color: #035730;
+    color: white;
+    padding: 40px 0 10px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col {
+    flex: 1 1 1;
+    min-width: 250px;
+  }
+  
+  .footer-col h3 {
+    font-size: 1.3em;
+    color: #ffd700;
+    margin-bottom: 15px;
+  }
+  
+  .footer-col h4 {
+    font-size: 1.0em;
+    color: #ffd700;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .footer-col.logo-text p {
+    font-size: 0.7em;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .footer-col.links ul {
+    list-style: none;
+  }
+  
+  .footer-col.links a {
+    display: block;
+    padding: 5px 0;
+    transition: color 0.2s;
+    align-items: center;
+  }
+  
+  .footer-col.links a:hover {
+    color: #ffd700;
+  }
+  
+  .footer-col.contact p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.8em;
+    opacity: 0.8;
+  }
+  
+  /* -------------------------------------- */
+  /* RESPONSIVIDADE */
+  /* -------------------------------------- */
+  
+  @media (max-width: 900px) {
+    /* NAV */
+    .hamburger {
+      display: block;
+    }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #035730;
+      flex-direction: column;
+      padding: 10px 0;
+    }
+    .nav-links.open {
+      display: flex;
+    }
+    .nav-item {
+      width: 100%;
+      padding: 10px 20px;
+      border-bottom: none !important;
+    }
+  
+    /* HERO */
+    #hero-page h1 {
+      font-size: 2.5em;
+    }
+  
+    /* CARDS */
+    .cards-grid {
+      grid-template-columns: 1fr; /* Coluna única no mobile */
+      gap: 20px;
+    }
+  
+    /* FOOTER */
+    .footer-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer-col {
+      min-width: 100%;
+      text-align: center;
+    }
+  
+    .footer-col.links a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+  
