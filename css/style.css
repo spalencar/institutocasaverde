@@ -18,12 +18,12 @@ html, body {
 /* -------------------------------------- */
 
 #main-nav {
-  background-color: #035730; /* Cor verde predominante */
+  background-color: #035730;
   position: fixed;
   top: 0;
-  height: 60px;
   width: 100%;
-  z-index: 1000; /* Garante que fique acima de tudo */
+  height: 60px;
+  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -44,37 +44,34 @@ html, body {
 }
 
 .logo-img {
-  height: 40px; /* Tamanho do logo na nav */
+  height: 40px;
   margin-right: 10px;
 }
-
 .logo-text {
   font-size: 1.4em;
   font-weight: 700;
 }
-
 .nav-links {
   display: flex;
-  gap: 25px; /* Espaço entre os links */
+  gap: 25px;
 }
 
 .nav-item {
   color: white;
-  text-decoration: none;
   font-weight: 600;
   padding: 5px 0;
   transition: color 0.3s ease, border-bottom 0.3s ease;
-  /* Efeito de hover interessante: Borda inferior que aparece */
-  border-bottom: 3px solid transparent; 
+  border-bottom: 3px solid transparent;
 }
 
-.nav-item:hover, .nav-item.active {
-  color: #ffd700; /* Um amarelo/dourado para destaque */
+.nav-item:hover,
+.nav-item.active {
+  color: #ffd700;
   border-bottom: 3px solid #ffd700;
 }
 
 .special-link {
-  background-color: #e6b800; /* Destaque para DOAÇÕES */
+  background-color: #e6b800;
   padding: 8px 15px;
   border-radius: 5px;
   border-bottom: none !important;
@@ -83,6 +80,16 @@ html, body {
 .special-link:hover {
   background-color: #ffc400;
   color: #035730;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 5px;
 }
 
 /* -------------------------------------- */
