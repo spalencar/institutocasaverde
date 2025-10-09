@@ -275,15 +275,17 @@ html, body {
 
   .special-link {
       /* Mantém o destaque, mas alinhado */
-      background-color: transparent;
-      color: #ffd700;
-      border-radius: 0;
-  }
-
-  .special-link:hover {
-      background-color: #024325;
-      color: #ffd700;
-  }
+      .special-link {
+        background-color: #e6b800;
+        padding: 8px 15px;
+        border-radius: 5px;
+        border-bottom: none !important;
+      }
+    
+      .special-link:hover {
+        background-color: #ffc400;
+        color: #035730;
+      }
 
   /* Correção do Carrossel para acomodar a nav: A nav mobile tem 60px de altura */
   #hero-carousel {
