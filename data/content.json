@@ -3,32 +3,32 @@
     {
       "id": 1,
       "image": "imagens/inicio/slide1.jpg",
-      "alt": "Grupo de pessoas em atividade no Instituto"
+      "alt": "Jovem aluno tocando teclado"
     },
     {
       "id": 2,
       "image": "imagens/inicio/slide2.jpg",
-      "alt": "Criança sorrindo durante aula"
+      "alt": "Crianças treinando futebol"
     },
     {
       "id": 3,
       "image": "imagens/inicio/slide3.jpg",
-      "alt": "Voluntários trabalhando na horta comunitária"
+      "alt": "Grupo de pessoas se confraternizando"
     },
     {
       "id": 4,
       "image": "imagens/inicio/slide4.jpg",
-      "alt": "Fachada do Instituto Casa Verde"
+      "alt": "Mãos digitando no teclado do notebook"
     },
     {
       "id": 5,
       "image": "imagens/inicio/slide5.jpg",
-      "alt": "Aula de artes com jovens"
+      "alt": "Aula de artes com crianças"
     },
     {
       "id": 6,
       "image": "imagens/inicio/slide6.jpg",
-      "alt": "Evento comunitário com música e dança"
+      "alt": "Cumprimento de mãos e doação"
     }
   ],
 
@@ -142,7 +142,7 @@
         "imagem": "imagens/atividades/limpeza.jpg",
         "titulo": "Mutirão de Limpeza do Bairro",
         "data": "Setembro, 2025",
-        "descricao": "Nossa equipe e voluntários uniram forças para limpar e revitalizar a margem do rio local."
+        "descricao": "Nossa equipe e voluntários uniram forças para limpar ruas da comunidade e revitalizar a margem do rio local."
       }
     ]
   },
@@ -217,7 +217,7 @@
         "imagemCard": "imagens/cursos/escola_futebol.png",
         "titulo": "Escola de Futebol - ICV",
         "descricaoCurta": "O Instituto Casa Verde oferece diversas modalidades esportivas para crianças e jovens da comunidade, promovendo saúde, disciplina e inclusão social. As escolas de futebol e boxe são os grandes destaques, unindo técnica, foco e superação em cada treino. Por meio do esporte, os alunos desenvolvem valores como respeito, cooperação e determinação. Um projeto que transforma vidas, formando atletas e cidadãos vencedores dentro e fora das quadras e ringues.",
-        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20saber%20mais%20sobre%20Informática%20Básica",
+        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20saber%20mais%20sobre%20a%20Escolinha%20de%20Futebol%20ICV",
 
         "detalhes": {
           "imagemDetalhe": "imagens/cursos/escola_futebol.png",
