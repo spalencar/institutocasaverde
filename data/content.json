@@ -43,14 +43,14 @@
     "imagemHero": "imagens/sobre_nos/banner.jpg",
     "quemSomos": {
       "titulo": "Quem Somos",
-      "texto": "O Instituto Casa Verde (ICV) é uma organização sem fins lucrativos comprometida em transformar a realidade de comunidades por meio da educação, cultura e desenvolvimento social. Desde nossa fundação, trabalhamos para criar um ambiente de aprendizado seguro e inspirador, onde crianças, jovens e adultos possam desenvolver suas habilidades, descobrir seus talentos e construir um futuro mais promissor.\n\nNossa atuação vai além da sala de aula. Promovemos atividades, workshops e eventos culturais que incentivam a participação da comunidade e o engajamento cívico. Acreditamos que o conhecimento é a chave para o empoderamento, e por isso investimos em projetos que fomentam a autonomia e a consciência social.",
+      "texto": "O Instituto Casa Verde (ICV) é uma organização sem fins lucrativos comprometida em transformar a realidade de comunidades por meio da educação, cultura e desenvolvimento social. Desde nossa fundação, trabalhamos para criar um ambiente de aprendizado seguro e inspirador, onde crianças e adolescentes em periferia possam desenvolver suas habilidades, descobrir seus talentos e construir um futuro mais promissor.\n\nNossa atuação vai além da sala de aula. Promovemos atividades e eventos culturais que incentivam a participação da comunidade e o engajamento cívico. Acreditamos que o conhecimento é a chave para o empoderamento, e por isso investimos em projetos que fomentam a autonomia e a consciência social.",
       "imagem": "imagens/sobre_nos/quem_somos.jpg"
     },
 
     "missaoVisao": {
       "titulo": "Nossa Missão e Visão",
-      "missao": "Promover a educação e o desenvolvimento social por meio de programas e projetos que capacitem indivíduos e fortaleçam a comunidade, criando um futuro de oportunidades para todos.",
-      "visao": "Ser reconhecido como um pilar de transformação social, onde a educação e a cidadania caminham juntas para construir uma sociedade mais justa, equitativa e sustentável.",
+      "missao": "Contribuir para o desenvolvimento integral de crianças e adolescentes, fortalecendo suas competências socioemocionais e preparando-os para construir um futuro consciente, justo e cheio de oportunidades.",
+      "visao": "Ser uma referência de transformação social, onde cada criança e adolescente encontre um ambiente acolhedor, que valoriza o seu potencial, promova seu crescimento integral e contribua para a superação de ciclos de exclusão social",
       "imagem": "imagens/sobre_nos/missao_visao.jpg"
     },
 
@@ -59,16 +59,28 @@
       "texto": "O trabalho do Instituto Casa Verde é pautado por valores que guiam cada uma de nossas ações:",
       "lista": [
         {
-          "titulo": "Solidariedade",
-          "descricao": "Acreditamos na importância de estender a mão e trabalhar em conjunto para o bem comum."
+          "titulo": "Respeito aos direitos",
+          "descricao": "Garantir o cumprimento dos direitos de cada criança e adolescente."
         },
         {
-          "titulo": "Integridade",
-          "descricao": "Agimos com transparência, ética e responsabilidade em todas as nossas atividades."
+          "titulo": "Inclusão e Igualdade",
+          "descricao": "Promover acesso a oportunidades para todos, sem discriminação."
         },
         {
-          "titulo": "Inovação",
-          "descricao": "Buscamos constantemente novas formas de aprender e ensinar, adaptando-nos para gerar o máximo impacto."
+          "titulo": "Autonomia e protagonismo",
+          "descricao": "Incentivar crianças e adolescentes a descobrirem seu potencial e fazerem escolhas conscientes."
+        },
+        {
+          "titulo": "Desenvolvimento integral",
+          "descricao": "Promover crescimento intelectual, emocional, social e cultural."
+        },
+        {
+          "titulo": "Transformação social",
+          "descricao": "Romper ciclos de exclusão e contribuir para uma sociedade mais justa e com oportunidades."
+        },
+        {
+          "titulo": "Compromisso com a comunidade",
+          "descricao": "Trabalhar em parceria com famílias, escolas e instituições para fortalecer vínculos e ampliar impactos."
         }
       ]
     }
@@ -114,7 +126,7 @@
         "id": 3,
         "imagem": "imagens/atividades/futebol.jpg",
         "titulo": "Torneio de Futebol Comunitário",
-        "data": "20 de Janeiro, 2026",
+        "data": "1 de Novembro, 2025",
         "tema": "Esportes",
         "horario": "09:00 - 12:00",
         "local": "Campo do ICV",
