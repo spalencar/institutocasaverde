@@ -126,7 +126,7 @@
         "id": 3,
         "imagem": "imagens/atividades/futebol.jpg",
         "titulo": "Torneio de Futebol Comunitário",
-        "data": "1 de Novembro, 2025",
+        "data": "01 de Novembro, 2025",
         "tema": "Esportes",
         "horario": "09:00 - 12:00",
         "local": "Campo do ICV",
@@ -322,3 +322,4 @@
     ]
   }
 }
+
