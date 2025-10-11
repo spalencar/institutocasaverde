@@ -11,7 +11,7 @@ body {
   height: 100%;
   width: 100%; /* Garante que não haja excesso de largura */
   overflow-x: hidden; /* Remove a barra de rolagem horizontal desnecessária */
-  background-color: #ecafaf;
+  background-color: #b7e7b5;
 }
 
 /* -------------------------------------- */

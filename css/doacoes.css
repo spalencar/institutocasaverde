@@ -12,7 +12,7 @@
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    background-color: #ecafaf; /* Fundo da página */
+    background-color: #b7e7b5; /* Fundo da página */
     color: #333;
   }
   
@@ -221,7 +221,7 @@
   }
   
   .modal-content {
-    background-color: white;
+    background-color: #b7e7b5;
     max-width: 600px;
     margin: 40px auto;
     border-radius: 10px;

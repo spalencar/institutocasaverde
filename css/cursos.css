@@ -12,7 +12,7 @@
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    background-color: #ecafaf;
+    background-color: #b7e7b5;
     color: #333;
   }
   
@@ -255,7 +255,7 @@
   }
   
   .modal-content {
-    background-color: #ecafaf;
+    background-color: #b7e7b5;
     max-width: 900px;
     margin: 40px auto;
     border-radius: 10px;
