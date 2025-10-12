@@ -316,9 +316,9 @@
         "icone": "facebook",
         "link": "https://facebook.com/institutocasaverde"
       },
-      { "icone": "instagram", "link": "https://instagram.com/icv_oficial" },
+      { "icone": "instagram", "link": "https://instagram.com/casaverdeinstituto" },
       { "icone": "linkedin", "link": "https://linkedin.com/" },
-      { "icone": "youtube", "link": "https://youtube.com/icvprogramas" }
+      { "icone": "youtube", "link": "https://youtube.com/" }
     ]
   }
 }
