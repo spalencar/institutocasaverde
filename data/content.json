@@ -267,9 +267,9 @@
       },
       {
         "id": 2,
-        "titulo": "Torne-se Membro Mensal",
+        "titulo": "Torne-se Um Associado",
         "imagem": "imagens/doacoes/card_membro.png",
-        "descricao": "Ao se tornar um membro mensal, seu apoio regular e fundamental garante a continuidade e o impacto de todas as nossas iniciativas. Contribua de forma consistente e ajude-nos a construir um futuro mais promissor para centenas de vidas. Faça a diferença, mês a mês!",
+        "descricao": "Ao se tornar um Associado, seu apoio regular e fundamental garante a continuidade e o impacto de todas as nossas iniciativas. Contribua de forma consistente e ajude-nos a construir um futuro mais promissor para centenas de vidas. Faça a diferença, mês a mês!",
         "modalId": "modal-mensal"
       },
       {
@@ -290,7 +290,7 @@
       },
 
       "mensal": {
-        "textoIntroducao": "Ao se tornar um membro mensal, você garante um fluxo contínuo de apoio que nos permite planejar projetos de longo prazo e causar um impacto ainda maior.",
+        "textoIntroducao": "Ao se tornar um Associado, você garante um fluxo contínuo de apoio que nos permite planejar projetos de longo prazo e causar um impacto ainda maior.",
         "linkAssinatura": "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=1d48bd609f2f4d858b55833f90fae0e9"
       },
 
