@@ -450,26 +450,25 @@ a {
   line-height: 1.5;
 }
 .carousel-arrow {
-  background: rgba(255, 255, 255, 0.9);
+  background: #ffd700; /* Amarelo de destaque do projeto */
   border: none;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   font-size: 20px;
-  color: #035730;
+  color: #035730; /* Verde escuro para contraste com o amarelo */
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   z-index: 10;
-  opacity: 0.8;
-  transition: opacity 0.2s;
+  transition: background-color 0.2s, transform 0.2s;
   flex-shrink: 0;
 }
 .carousel-arrow:hover {
-  opacity: 1;
-  background: white;
+  background: #ffc400; /* Um amarelo ligeiramente mais claro no hover */
+  transform: scale(1.05);
 }
 .carousel-prev {
   order: -1; /* Coloca à esquerda */
