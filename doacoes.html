@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <link rel="icon" type="image/png" href="imagens/favicon.png" />
     <title>Doações e Apoio | Instituto Casa Verde</title>
-    <link rel="stylesheet" href="css/doacoes.css">
+    <link rel="stylesheet" href="css/doacoes.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -45,6 +45,39 @@
       <section class="donation-section">
         <div class="cards-grid" id="donation-cards-container"></div>
       </section>
+
+      <!-- Seção: Nossos Parceiros -->
+      <section class="partners-section">
+        <h1 class="partners-title">Nossos Parceiros</h1>
+
+        <div class="carousel-container">
+          <!-- Setas dentro do container para evitar overflow -->
+          <button
+            class="carousel-arrow carousel-prev"
+            aria-label="Parceiro anterior"
+          >
+            &#8249;
+          </button>
+          <div class="carousel-wrapper">
+            <div class="carousel-track" id="carousel-track">
+              <!-- Parceiros serão carregados aqui -->
+            </div>
+          </div>
+          <button
+            class="carousel-arrow carousel-next"
+            aria-label="Próximo parceiro"
+          >
+            &#8250;
+          </button>
+        </div>
+
+        <p class="partners-cta">
+          Se sua empresa deseja ser parceira, entre em contato pelo email:
+          <a href="mailto:casaverdeinstituto@gmail.com"
+            >casaverdeinstituto@gmail.com</a
+          >
+        </p>
+      </section>
     </main>
 
     <div class="modal-overlay" id="modal-pontual">
@@ -66,11 +99,19 @@
         <a id="btn-assinar" href="#" target="_blank" class="card-button"
           >Doar R$ 30</a
         >
-        <a id="btn-assinar" href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=e95d7462ebb64798a263bd87ff4c8e02" target="_blank" class="card-button"
+        <a
+          id="btn-assinar"
+          href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=e95d7462ebb64798a263bd87ff4c8e02"
+          target="_blank"
+          class="card-button"
           >Doar R$ 60</a
         >
-        <a id="btn-assinar" href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=3cf4737d94714d6191bee3e4e6d6d121" target="_blank" class="card-button"
-        >Doação Livre</a
+        <a
+          id="btn-assinar"
+          href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=3cf4737d94714d6191bee3e4e6d6d121"
+          target="_blank"
+          class="card-button"
+          >Doação Livre</a
         >
         <button class="card-button" data-modal="modal-mensal">Fechar</button>
       </div>
@@ -280,6 +321,114 @@
           });
         });
       }
+
+      // Dados dos parceiros — substitua com seus próprios
+      const parceiros = [
+        {
+          imagem: "imagens/parceiros/jo_esportes.jpg",
+          titulo: "JÔ ESPORTES",
+          descricao:
+            "Jô Esportes é a nova loja do Shopping da Vila - 11 98747-2002",
+        },
+        {
+          imagem: "imagens/parceiros/havan.jpg",
+          titulo: "HAVAN KIDS",
+          descricao:
+            "Colabora com materiais para escritório e reforço escolar.",
+        },
+        {
+          imagem: "imagens/parceiros/comunicacao-visual.jpg",
+          titulo: "KM COMUNICAÇÃO VISUAL",
+          descricao:
+            "Tudo para a identidade visual da sua marca, negócio da sua empresa.",
+        },
+        {
+          imagem: "imagens/parceiros/mat_construcao.jpg",
+          titulo: "DCAMS COMERCIAL",
+          descricao: "Doação de materiais de construção.",
+        },
+        {
+          imagem: "imagens/parceiros/mat_construcao.jpg",
+          titulo: "DCAMS Comercial",
+          descricao: "Doação de materiais de construção.",
+        },
+      ];
+
+      // Renderiza os parceiros
+      function renderPartners() {
+        const track = document.getElementById("carousel-track");
+        if (!track) return;
+        track.innerHTML = "";
+        parceiros.forEach((parceiro) => {
+          const slide = document.createElement("div");
+          slide.classList.add("partner-slide");
+          slide.innerHTML = `
+      <img src="${parceiro.imagem}" alt="${parceiro.titulo}" />
+      <h3>${parceiro.titulo}</h3>
+      <p>${parceiro.descricao}</p>
+    `;
+          track.appendChild(slide);
+        });
+      }
+
+      // Navegação do carrossel
+      function setupCarousel() {
+        const prevBtn = document.querySelector(".carousel-prev");
+        const nextBtn = document.querySelector(".carousel-next");
+        const track = document.getElementById("carousel-track");
+
+        if (!prevBtn || !nextBtn || !track) {
+          console.error("Elementos do carrossel não encontrados.");
+          return;
+        }
+
+        let currentIndex = 0;
+        const slideCount = parceiros.length;
+        const visibleSlides = Math.floor(track.offsetWidth / (260 + 20)); // largura do slide + gap
+
+        function updateCarousel() {
+          const offset = -currentIndex * (260 + 20);
+          track.style.transform = `translateX(${offset}px)`;
+        }
+
+        prevBtn.addEventListener("click", () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+          }
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (currentIndex < slideCount - visibleSlides) {
+            currentIndex++;
+            updateCarousel();
+          }
+        });
+
+        // Recalcular ao redimensionar a janela
+        window.addEventListener("resize", () => {
+          const newVisibleSlides = Math.floor(track.offsetWidth / (260 + 20));
+          if (newVisibleSlides !== visibleSlides) {
+            // Reajustar índice se necessário
+            if (currentIndex > slideCount - newVisibleSlides) {
+              currentIndex = Math.max(0, slideCount - newVisibleSlides);
+              updateCarousel();
+            }
+          }
+        });
+      }
+
+      // Inicializa parceiros e carrossel
+      document.addEventListener("DOMContentLoaded", () => {
+        renderPartners();
+
+        // Garante que o DOM esteja completamente carregado antes de iniciar o carrossel
+        setTimeout(() => {
+          if (window.innerWidth > 900) {
+            setupCarousel();
+          }
+        }, 500);
+      });
 
       // Função de Renderização do FOOTER (Reutilizada)
       function renderFooter(footerData) {
