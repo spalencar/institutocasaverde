@@ -278,7 +278,7 @@
       {
         "id": 3,
         "titulo": "Voluntariado",
-        "imagem": "imagens/doacoes/card_voluntario.png",
+        "imagem": "imagens/doacoes/card_voluntarios.png",
         "descricao": "Seu tempo e talento são inestimáveis para nós! No Instituto Casa Verde, cada voluntário é um agente de mudança, contribuindo diretamente para o florescimento de nossa comunidade. Entre em contato e descubra como você pode fazer a diferença, plantando esperança e colhendo sorrisos!",
         "modalId": "modal-voluntario"
       }
