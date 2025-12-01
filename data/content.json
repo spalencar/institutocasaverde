@@ -102,59 +102,62 @@
     "proximos": [
       {
         "id": 1,
-        "imagem": "imagens/atividades/financas.jpg",
-        "titulo": "Workshop de Finanças Pessoais",
-        "data": "15 de Novembro, 2025",
-        "tema": "Finanças",
-        "horario": "19:00 - 21:00",
-        "local": "Auditório Principal ICV",
-        "descricao": "Aprenda a planejar seu orçamento e investir para o futuro em nosso workshop gratuito.",
-        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20me%20inscrever%20no%20Workshop%20de%20Finanças"
+        "imagem": "imagens/atividades/coleta-seletiva2.jpg",
+        "titulo": "Reciclar Para Transformar",
+        "data": "29 de Novembro, 2025",
+        "tema": "Meio Ambiente",
+        "horario": "9:00 - 12:00",
+        "local": "Instituto Casa Verde",
+        "descricao": "Alunos da Unicsul realizarão a ação “Reciclar para Transformar” com crianças, promovendo conscientização sobre coleta seletiva, descarte correto do lixo e cuidado com o meio ambiente por meio de palestra e oficina prática.",
+        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20saber%20mais%20sobre%20a%20ação%20'Reciclar%20para%20Transformar'."
       },
+
       {
         "id": 2,
-        "imagem": "imagens/atividades/arrecadacao.jpg",
-        "titulo": "Arrecadação de Agasalhos e Alimentos",
-        "data": "25 de Outubro, 2025",
-        "tema": "Social",
-        "horario": "10:00 - 18:00",
-        "local": "Pontos de coleta do ICV",
-        "descricao": "Ajude a aquecer e alimentar famílias em situação de vulnerabilidade. Doe roupas, cobertores e alimentos não perecíveis.",
-        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Quero%20mais%20informações%20sobre%20os%20pontos%20de%20coletas."
+        "imagem": "imagens/atividades/futebol.jpg",
+        "titulo": "Torneio de Futebol Comunitário ICV",
+        "data": "13 de Dezembro, 2025",
+        "tema": "Esportes",
+        "horario": "09:00 - 14:00",
+        "local": "Quadra da escola",
+        "descricao": "Como sempre vem fazendo, o Instituto Casa Verde mais uma vez promove e Incentiva o esporte e a integração com um torneio amistoso para crianças e adolescentes neste mês de dezembro.",
+        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Informações%20sobre%20o%20Torneio%20de%20Futebol%20no%20ICV."
       },
+
       {
         "id": 3,
-        "imagem": "imagens/atividades/futebol.jpg",
-        "titulo": "Torneio de Futebol Comunitário",
-        "data": "01 de Novembro, 2025",
-        "tema": "Esportes",
-        "horario": "09:00 - 12:00",
+        "imagem": "imagens/atividades/confraternizacao.jpg",
+        "titulo": "Encerramento das Atividades de Final de Ano",
+        "data": "13 de Dezembro, 2025",
+        "tema": "Social",
+        "horario": "14:00 - 16:00",
         "local": "Campo do ICV",
-        "descricao": "Incentivando o esporte e a integração com um torneio amistoso para crianças de 6 a 12 anos.",
-        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Informações%20sobre%20o%20Torneio%20de%20Futebol"
+        "descricao": "A equipe do Instituto Casa Verde celebrorá o encerramento das atividades de final de ano em um evento memorável. Será um momento de reconhecimento e confraternização, fortalecendo os laços para um 2026 repleto de novos desafios e sucessos.",
+        "linkContato": "https://api.whatsapp.com/send?phone=5511918225870&text=Informações%20sobre%20esse%20evento%20de%20final%20de%20ano."
       }
     ],
     "realizados": [
       {
         "id": 101,
-        "imagem": "imagens/atividades/artesanato.jpg",
-        "titulo": "Oficina de Artesanato Solidário",
-        "data": "Junho, 2025",
-        "descricao": "Produção de peças artesanais para arrecadação de fundos e desenvolvimento de novas habilidades."
+        "imagem": "imagens/atividades/roda-de-dialogos.jpg",
+        "titulo": "Roda de Diálogos Sobre Meio Ambiente",
+        "data": "Maio, 2025",
+        "descricao": "Roda de diálogo entre alunos da Unicsul e moradores do Jardim Fiorelo realizado no Instituto Casa Verde, refletindo sobre o impacto do descarte irregular de lixo e sua relação com as enchentes que atingem o bairro."
       },
       {
         "id": 102,
-        "imagem": "imagens/atividades/saude.jpg",
-        "titulo": "Feira de Saúde e Bem-Estar",
-        "data": "Outubro, 2025",
-        "descricao": "Atendimentos básicos de saúde, palestras sobre bem-estar e atividades físicas para a comunidade."
+        "imagem": "imagens/atividades/palavras-que-transformam.jpg",
+        "titulo": "Palavras que Transformam",
+        "data": "Novembro, 2025",
+        "descricao": "Encontro realizado no Instituto Casa Verde com os alunos da Unicsul. Durante a atividade, os participantes refletiram sobre o poder da linguagem e como palavras podem inspirar mudanças positivas em nossas atitudes, relações e na comunidade."
       },
+
       {
         "id": 103,
-        "imagem": "imagens/atividades/limpeza.jpg",
-        "titulo": "Mutirão de Limpeza do Bairro",
-        "data": "Setembro, 2025",
-        "descricao": "Nossa equipe e voluntários uniram forças para limpar ruas da comunidade e revitalizar a margem do rio local."
+        "imagem": "imagens/atividades/coleta-seletiva.jpg",
+        "titulo": "Reciclar Para Transformar",
+        "data": "Novembro, 2025",
+        "descricao": "Na sede do Instituto Casa Verde, foi realizada a ação “Reciclar para Transformar” com crianças, promovendo conscientização sobre coleta seletiva, descarte correto do lixo e cuidados com o meio ambiente por meio de palestra e oficina prática com os alunos da Unicsul."
       }
     ]
   },
